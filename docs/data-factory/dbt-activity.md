@@ -43,12 +43,15 @@ ms.custom:
 # Overview
  1. Navigate to your Fabric workspace.
  2. Select New item > dbt job from the item creation menu.
-  
- 3. Enter a name and select a location. 
+ 3. Enter a name and select a location.
+    :::image type="content" source="media/dbt-activity/create_job.png" alt-text="Screenshot of the Fabric UI with the create job pop up .":::
+    
  4. Choose the target Fabric Data Warehouse connection.
  5. Configure job parameters and save the new dbt job item.
     
   Once created, you can open the dbt job to view its file structure, configure settings, and run dbt commands directly from the Fabric UI.
+
+   :::image type="content" source="media/dbt-activity/landing_page.png" alt-text="Screenshot of the Fabric UI with landing page of dbt job":::
 
  # Configuring dbt Job
  When creating or editing a dbt job, click the dbt configurations button to open the profile setup
@@ -67,6 +70,8 @@ ms.custom:
  4. Enter Schema (e.g., jaffle_shop_demo).
  5. (Optional) Check Seed date if you want to load CSVs on dbt seed or dbt build.
  6. Click Apply.
+
+:::image type="content" source="media/dbt-activity/profile_adapter.png" alt-text="Screenshot of the Fabric UI with the dbt job profile adapter settings.":::
 
  **Change adapter (when and how)**
  
@@ -101,17 +106,21 @@ ms.custom:
  3. (Optional) Enable Fail fast or Full refresh as needed.
  4. Click Apply to save.
 
+:::image type="content" source="media/dbt-activity/advanced_settings.png alt-text="Screenshot of the Fabric UI with the dbt job advanced run settings.":::
+
  **Run Settings**
  
  This tab lets you control which models to run and how to select them:
  **Run mode**:
  - Run only selected models: Choose specific models to include in the run (e.g., orders, stg_customers, etc.).
  - Run with advanced selectors: Use dbt selectors for granular control (unions, intersections, exclusions).
+   :::image type="content" source="media/dbt-activity/run_settings.png alt-text="Screenshot of the Fabric UI with the dbt job advanced run settings.":::
    
  **Advanced selector configuration**:
  - Selector: Name your selector.
  - Select: Specify resources (models, tags, packages).
  - Exclude: List resources to skip.
+   :::image type="content" source="media/dbt-activity/running_with_advance_selectors.png alt-text="Screenshot of the Fabric UI with the dbt job advanced selector run settings.":::
 
 **How to use**
  1. Click Advanced Settings → Run settings.
@@ -152,6 +161,9 @@ ms.custom:
  - **End date and time**: (Optional) When the schedule should stop.
  - **Time zone**: Select your preferred time zone for scheduling.
  4. Click Save to activate the schedule.
+   
+ **Screenshot reference**: 
+ :::image type="content" source="media/dbt-activity/schedule_dbt.png alt-text="Screenshot of the Fabric UI with the dbt job schedule settings.":::
 
  **Why use scheduling?** <br>
  
